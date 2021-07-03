@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Project</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- CSS bootstrap4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="up">
+        <div class="alert alert-dismissible text-white">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <a href="#https://www.spotify.com/bd-en/signup/?creation_flow=desktop&flow=&forward_url=https%3A%2F%2Faccounts.spotify.com%2Fauthorize%3Fclient_id%3D65b708073fc0480ea92a077233ca87bd%26response_type%3Dcode%26redirect_uri%3Dhttp%253A%252F%252F127.0.0.1%253A4381%252Flogin%26scope%3Dapp-remote-control%252Cplaylist-modify%252Cplaylist-modify-private%252Cplaylist-modify-public%252Cplaylist-read%252Cplaylist-read-collaborative%252Cplaylist-read-private%252Cstreaming%252Cugc-image-upload%252Cuser-follow-modify%252Cuser-follow-read%252Cuser-library-modify%252Cuser-library-read%252Cuser-modify%252Cuser-modify-playback-state%252Cuser-modify-private%252Cuser-personalized%252Cuser-read-birthdate%252Cuser-read-currently-playing%252Cuser-read-email%252Cuser-read-play-history%252Cuser-read-playback-position%252Cuser-read-playback-state%252Cuser-read-private%252Cuser-read-recently-played%252Cuser-top-read%26code_challenge%3D-h5Uvu7jBY96e5-rHWdb9OcNV-29OXTEpAWpXSLfv5Q%26code_challenge_method%3DS256&utm_source=spotify&utm_medium=desktop-win32-store&utm_campaign=msft_1&referral=msft_1&sp_t_counter=1" class="text-white">Bangladesh</a>
+        </div>
+    </header>
+
+    <!-- main starts here -->
+    <main>
+        <div class="container text-center px-5 ">    
+            
+            <div class="before_form ">
+                <div class="logo ml-auto mr-auto p-3">
+                    <a href="#"><i class="fab fa-spotify fa-3x p-3"><span class="spot" >Spotify</span> </i></a>
+                </div>
+    
+                <div class="listen">
+                    <strong> Sign up for free to start listening. </strong>
+                </div>
+                
+                <div class="btn rounded-pill p-3 mt-3 text-uppercase ">sign up with facebook</div>
+                <div class="mid">
+                    <hr class="hr_line">
+                    <span class="hr_text">or</span>
+                    <hr class="hr_line">
+                    <!-- <hr class="hr_line">
+                    <hr class="hr_line"> -->
+                </div>
+            </div>
+
+            <div class="written">
+                Sign up with your email address
+            </div>
+
+            <form action="" class="m-auto was-validated">
+                <div class="form-group">
+                    <label for="email">What's your email?</label>
+                    <input type="email" placeholder="Enter your email" class="form-control">
+                    <div class="invalid-feedback">You need to enter your email.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cemail">Confirm your email</label>
+                    <input type="email" name="cemail" id="cemail" placeholder="Enter your email again" class="form-control">
+
+                    <div class="invalid-feedback">You need to confirm your email.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Create a password</label>
+                    <input type="password" class="form-control" name="pass" id="pass" placeholder="Create a password.">
+                    <div class="invalid-feedback">You need to enter a password.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">What should we call you?</label>
+                    <input type="text" placeholder="Enter a profile name." class="form-control">
+                    <div class="invalid-feedback">You need to enter a name for your profile.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">What's your birthday date?</label>
+                    <input type="date" placeholder="Enter a profile name." class="form-control">
+                    <div class="invalid-feedback">Enter a valid day of the month.</div>
+                    <div class="invalid-feedback">Select your birth month.</div>
+                    <div class="invalid-feedback">Enter a valid year.</div>
+                </div>
+                <div class="form-group">
+                    <label for="gender">What's your gender?</label>
+                    <input type="radio" name="male" id="male" class="rad"> Male
+                    <input type="radio" name="female" id="female" class="rad"> Female
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" name="one" id="one">I would prefer not to receive marketing messages from Spotify
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="one" id="one">Share my registration data with Spotify's content providers for marketing purposes.
+                </div>
+
+                <div class="last_side">
+                    <p class="mes1">By clicking on Sign up, you agree to Spotify's <a href="#https://www.spotify.com/bd-en/legal/end-user-agreement/">Terms and Conditions of Use.</a></p>
+                    <p>To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's<a href="https://www.spotify.com/bd-en/legal/privacy-policy/">Privacy Policy.</a></p>
+                </div>
+                <button type="submit" class="btn rounded-pill p-3 mt-3 text-uppercase bg-success mb-5">sign up</button>
+            </form>
+            <p class="last">Have an account?<a href="http://127.0.0.1:5500/index.html?cemail=&pass=">Log In</a>.</p>
+        </div>
+    </main>
+</body>
+</html>
